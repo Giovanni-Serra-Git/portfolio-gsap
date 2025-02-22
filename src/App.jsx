@@ -216,29 +216,24 @@ export default function App() {
 
   useEffect(() => {
     // Animazione GSAP
-    tl.fromTo(greetings.current, 
-    { x: "-100%", autoAlpha: 0},
-    { x: "0",autoAlpha: 1 , duration: 1} 
+    tl.to(greetings.current, 
+    { x: 0, opacity: 1 },
   )
 
-  .fromTo(name.current, 
-    { x: "-150%", autoAlpha: 0},
-    { x: "0", autoAlpha: 1, duration: 1}
+  .to(name.current, 
+    { x: 0, opacity: 1},
   )
 
-  .fromTo(role.current,
-    {x: "-150%", autoAlpha: 0},
-    {x: "0",autoAlpha: 1, duration: 1}
+  .to(role.current,
+    {x: 0, opacity: 1 }
   )
 
-  .fromTo(
+  .to(
     letterRefs.current,
-    
-    { x: "-150%", opacity: 0,autoAlpha: 0 },
-    {
+        {
       x: "0%",
-      autoAlpha: 1,
       opacity: 1,
+      autoAlpha: 1,
       duration: 0.1,
       stagger: 0.2, // Effetto concatenato
       ease: "power3.out"
@@ -423,16 +418,16 @@ gsap.registerPlugin(ScrollTrigger);
           />
         )}
         <div className="flex flex-col justify-center w-full h-full absolute top-0 left-0 z-20 px-[2rem]">
-          <p className="text-white text-xl md:text-3xl font-bold uppercase" ref={greetings}>Hi</p>
-          <p className="text-[#ecf0f1] text-xl md:text-3xl font-bold uppercase" ref={name}>
+          <p className="text-white text-xl md:text-3xl font-bold uppercase greetings" ref={greetings}>Hi</p>
+          <p className="text-[#ecf0f1] text-xl md:text-3xl font-bold uppercase name" ref={name}>
             My name is <span className="text-[#ffcc66]" >Giovanni Serra</span> and I am a
           </p>
-          <p className="text-[#ffcc66] text-4xl md:text-7xl uppercase font-bold my-8" ref={role}>Front End Developer</p>
+          <p className="text-[#ffcc66] text-4xl md:text-7xl uppercase font-bold my-8 role" ref={role}>Front End Developer</p>
           <p className="text-[#80d4ff] text-xl font-bold uppercase my-4 mx-auto md:w-1/2 md:mx-0">
           {text.split(" ").map((char, index) => {
             return (
               <>
-                <span className="inline-block" ref={el => letterRefs.current[index] = el} key={index}>{char === " " ? "\u00A0" : char}</span>
+                <span className="inline-block lettersRef" ref={el => letterRefs.current[index] = el} key={index}>{char === " " ? "\u00A0" : char}</span>
                 <span> </span>
               </>
             )

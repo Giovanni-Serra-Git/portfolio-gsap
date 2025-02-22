@@ -11,3 +11,5 @@ body { background-color: #262626; overflow-x: hidden; }
     -webkit-text-stroke: 1px #ffcc66;
     color: transparent;
 }
+
+.greetings, .name, .lettersRef, .role { transform: translateX(-150%); opacity: 0; }
