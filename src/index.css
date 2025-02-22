@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body { background-color: #262626; overflow-x: hidden; }
+
+.text-outline {
+    -webkit-text-stroke: 2px #80d4ff;
+    color: transparent;
+}
+
+.text-outline-yellow {
+    -webkit-text-stroke: 1px #ffcc66;
+    color: transparent;
+}
