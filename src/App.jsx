@@ -482,7 +482,7 @@ gsap.registerPlugin(ScrollTrigger);
                 <div className="grid grid-rows-3 grid-cols-3 lg:flex gap-6 w-[100%]">
                 {item.stack.map((item, index) => { 
                   return (
-                    <div  className={`flex gap-4 items-center w-full col-start-2 md:col-start-1` } key={index}>
+                    <div  className={`flex gap-4 items-center w-full col-start-1 md:col-start-1` } key={index}>
                     <img  src={item.logo} alt={item.name} width="50" height="50" />
                     <p >{item.name}</p>
                   </div>
