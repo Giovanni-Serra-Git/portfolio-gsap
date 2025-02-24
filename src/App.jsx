@@ -108,26 +108,26 @@ const projects = [
     description: "A beauty aesthetics website I created for a client. I primarily focused on an innovative design and aimed for light and eye-pleasing colors.",
     img: "/gallery/centro_estetico.png",
   },
-  {
-    title: "fit gym website app",
-    stack: [
-      {
-        logo: "/logo/html.svg",
-        name: "Html"
-      },
-      {
-        logo: "/logo/css.svg",
-        name: "TailwindCSS"
-      },
-      {
-        logo: "/logo/javascript.svg",
-        name: "Javascript"
-      },
-    ],
-    url: "https://web-app-gym.netlify.app/",
-    description: "This demo project includes gym opening hours, promotions and an internal application where you can search for targeted exercises. The application was created by retrieving data through Rapid Api. For trying the application just go to the exercise section, then click on the *go to rapid api* button",
-    img: "/gallery/gym.png",
-  },
+  // {
+  //   title: "fit gym website app",
+  //   stack: [
+  //     {
+  //       logo: "/logo/html.svg",
+  //       name: "Html"
+  //     },
+  //     {
+  //       logo: "/logo/css.svg",
+  //       name: "TailwindCSS"
+  //     },
+  //     {
+  //       logo: "/logo/javascript.svg",
+  //       name: "Javascript"
+  //     },
+  //   ],
+  //   url: "https://web-app-gym.netlify.app/",
+  //   description: "This demo project includes gym opening hours, promotions and an internal application where you can search for targeted exercises. The application was created by retrieving data through Rapid Api. For trying the application just go to the exercise section, then click on the *go to rapid api* button",
+  //   img: "/gallery/gym.png",
+  // },
   {
     title: "restaurant design",
     stack: [
