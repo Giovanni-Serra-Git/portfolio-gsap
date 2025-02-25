@@ -305,7 +305,6 @@ export default function App() {
           trigger: liveWebsites.current,
           start: "top+=100 bottom",
           toggleActions: "play none none reverse",
-          markers: true,
         },
       }
     );
@@ -434,7 +433,7 @@ export default function App() {
     console.log(container);
   };
 
-  return (
+  return ( 
     <>
 
     {/* LANDING ANIMATION */}
