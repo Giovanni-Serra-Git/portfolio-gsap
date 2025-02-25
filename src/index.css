@@ -12,4 +12,4 @@ body { background-color: #262626; overflow-x: hidden; }
     color: transparent;
 }
 
-.greetings, .name, .lettersRef, .role { transform: translateX(-150%); opacity: 0; }
+.greetings, .name, .lettersRef, .role, .location { transform: translateX(-150%); opacity: 0; }
