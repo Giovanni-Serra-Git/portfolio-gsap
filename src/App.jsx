@@ -466,7 +466,7 @@ export default function App() {
           >
             I am based in <span className="text-[#00802b] uppercase">It</span>
             <span className="uppercase">a</span>
-            <span className="text-[#ff4d4d] uppercase">ly, </span>I am a
+            <span className="text-[#ff4d4d] uppercase">ly</span>, I am a
           </p>
           <p
             className="text-[#ffcc66] text-4xl md:text-7xl uppercase font-bold my-8 role"
