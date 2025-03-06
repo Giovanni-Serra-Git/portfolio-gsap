@@ -209,9 +209,9 @@ export default function App() {
   gsap.registerPlugin(ScrollTrigger);
 
   const text =
-    "I would love the opportunity to work on challenging web projects, where I can leverage my skills to deliver high-quality, responsive websites, landing pages, and custom designs.";
+    "I build visually appealing websites that deliver a great user experience";
   const finalText =
-    "I can provide fully functional websites, pixel-perfect designs, and smooth user experiences tailored to your needs";
+    "I would love the opportunity to join a team of great developers where I can learn from the best, gaining insights into sophisticated web development and site-building techniques";
 
   useGSAP(() => {
     tl.to(greetings.current, { x: 0, opacity: 1 })
@@ -227,7 +227,7 @@ export default function App() {
         opacity: 1,
         autoAlpha: 1,
         duration: 0.1,
-        stagger: 0.1,
+        stagger: 0.2,
         ease: "power3.out",
       });
 
@@ -501,7 +501,8 @@ export default function App() {
             ref={description_1}
             className="text-2xl md:text-4xl text-[#80d4ff]"
           >
-            I'm a front-end developer passionate about creating high-quality, responsive websites and landing pages. I am eager to bring my skills to deliver custom, user-friendly web experiences.
+            I'm a front end developer eager to join a company in order to learn
+            the job from experts.
           </p>
           <p ref={description_2} className="text-xl md:text-3xl">
             I use simple yet effective colors to create the structure and
@@ -538,6 +539,9 @@ export default function App() {
             react router
           </p>
           <p className="stack-tech text-amber-100 uppercase  rounded-[10px] px-2 md:rounded-4xl border-amber-300 border-[2px] w-[100%] md:w-[150px] my-[1rem] text-center py-1">
+            redux toolkit
+          </p>
+          <p className="stack-tech text-amber-100 uppercase  rounded-[10px] px-2 md:rounded-4xl border-amber-300 border-[2px] w-[100%] md:w-[150px] my-[1rem] text-center py-1 col-start-2">
             tailwind css
           </p>
         </div>
@@ -672,10 +676,38 @@ export default function App() {
             })}
           </div>
         </div>
-        <div className="flex justify-center items-center py-4">
+        <div className="flex flex-col md:flex-row md:items-center">
+          <div className="flex-1 md:flex-2/3">
             <p className="text-[#80d4ff] text-[1rem] text-center md:text-left md:text-4xl font-bold uppercase email">
               giovanni.serra.web@gmail.com
             </p>
+          </div>
+          <div className="flex md:flex-1/3 justify-center md:justify-end items-end gap-4 md:gap-8 my-10">
+            <a
+              href="https://github.com/Giovanni-Serra-Git"
+              target="_blank"
+              className="inline-block icon"
+            >
+              <img
+                src="/logo/github.svg"
+                alt="Github Logo"
+                width="50"
+                className=" transition-transform duration-300 hover:scale-150 ease-in-out"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/giovanni-serra-609a84277/"
+              target="_blank"
+              className="inline-block icon"
+            >
+              <img
+                src="/logo/linkedin.svg"
+                alt="Linkedin Logo"
+                width="50"
+                className=" transition-transform duration-300 hover:scale-150 ease-in-out"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </>
